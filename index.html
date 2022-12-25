@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="score_div">
+        <img class="logo-img" src="images/logo.svg" />
+        <div class="showing_score">
+          <p class="score">SCORE</p>
+          <p id="score_num">0</p>
+        </div>
+      </div>
+
+      <!-- MAIN GAME TRIO  -->
+      <div id="trio" class="">
+        <div id="game_div">
+          <button class="game-btn paper-btn" data-choice="paper">
+            <span class="white-bg">
+              <img
+                class="paper"
+                src="images/icon-paper.svg"
+                alt="paper_image"
+              />
+            </span>
+          </button>
+          <button class="game-btn scissors-btn" data-choice="scissors">
+            <span class="white-bg">
+              <img
+                class="scissor"
+                src="images/icon-scissors.svg"
+                alt="scissor_image"
+              />
+            </span>
+          </button>
+          <button class="game-btn rock-btn" data-choice="rock">
+            <span class="white-bg">
+              <img class="rock" src="images/icon-rock.svg" alt="rock_image" />
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- AFTER SELECTED CHOICE -->
+      <div id="el_place" class="display">
+        <div id="show_el">
+          <div class="picked" style="position: relative">
+            <h2 class="head_up">YOU PICKED</h2>
+            <button id="user" class="Elgame-btn paper-btn">
+              <span class="ElWhite-bg">
+                <img
+                  id="h_user"
+                  class="paper"
+                  src="images/icon-paper.svg"
+                  alt="paper_image"
+                />
+              </span>
+            </button>
+          </div>
+          <div id="play-button" class="display" style="text-align: center">
+            <div class="pl_div">
+              <h2 id="you">YOU LOSE</h2>
+              <button id="play-btn">PLAY AGAIN</button>
+            </div>
+          </div>
+          <div class="picked">
+            <h2 class="head_up">THE HOUSE PICKED</h2>
+            <div id="b-wait" class="black_wait"></div>
+            <button id="house" class="Elgame-btn scissors-btn display">
+              <span class="ElWhite-bg">
+                <img
+                  id="h_house"
+                  class="scissors"
+                  src="images/icon-scissors.svg"
+                  alt="scissor_image"
+                />
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button id="rule_button" onclick="rules()">RULES</button>
+      <div id="rules-div" class="display">
+        <div class="Rules_top">
+          <p class="rules_text">RULES</p>
+          <button class="rule_close_button" onclick="rules()">
+            <svg
+              id="cross_svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+        <img class="rules_image" src="images/image-rules.svg" alt="rules" />
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="mailto:amaan12171@gmail.com">Abdul Amaan Sheikh</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
