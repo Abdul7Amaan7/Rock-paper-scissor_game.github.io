@@ -2,6 +2,8 @@
 
 ![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)
 
+##website(https://abdul7amaan7.github.io/Rock-paper-scissor_game.github.io/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
